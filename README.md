@@ -127,7 +127,7 @@ $response = $weather->getWeather('长沙');
 **第三个参数为返回值类型，可选 json 与 xml，默认 json：**
 
 `
-$response = $weather->getWeather('深圳', 'all', 'xml');
+$response = $weather->getWeather('长沙', 'all', 'xml');
 `
 
 示例：
@@ -140,8 +140,8 @@ $response = $weather->getWeather('深圳', 'all', 'xml');
     <infocode>10000</infocode>
     <lives type="list">
         <live>
-            <province>广东</province>
-            <city>深圳市</city>
+            <province>湖南</province>
+            <city>长沙市</city>
             <adcode>440300</adcode>
             <weather>中雨</weather>
             <temperature>27</temperature>
@@ -193,7 +193,7 @@ WEATHER_API_KEY=xxxxxxxxxxxxxxxxxxxxx
     .
     public function edit(Weather $weather) 
     {
-        $response = $weather->getWeather('深圳');
+        $response = $weather->getWeather('长沙');
     }
     .
     .
@@ -208,7 +208,7 @@ WEATHER_API_KEY=xxxxxxxxxxxxxxxxxxxxx
     .
     public function edit() 
     {
-        $response = app('weather')->getWeather('深圳');
+        $response = app('weather')->getWeather('长沙');
     }
     .
     .

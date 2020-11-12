@@ -2,8 +2,8 @@
 namespace LostControls\Weather;
 
 use GuzzleHttp\Client;
-use Overtrue\Weather\Exceptions\HttpException;
-use Overtrue\Weather\Exceptions\InvalidArgumentException;
+use LostControls\Weather\Exceptions\HttpException;
+use LostControls\Weather\Exceptions\InvalidArgumentException;
 
 class Weather
 {
@@ -36,9 +36,14 @@ class Weather
      * @return mixed|string
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
-    public function getWeather($city, $type = 'base', $format = 'json')
+    public function getWeather($city, $type = 'live', $format = 'json')
     {
         $url = 'https://restapi.amap.com/v3/weather/weatherInfo';
+
+        $type = [
+            'live' => 'base',
+            'forecast' => 'all',
+        ];
 
         // 1.对 $format 和 $type 参数进行检查，不在范围内的抛出异常
         if (!\in_array(\strtolower($format), ['xml', 'json'])) {
@@ -74,5 +79,13 @@ class Weather
         }
     }
 
+    public function getLiveWeather($city, $format = 'json')
+    {
+        return $this->getWeather($city, 'base', $format);
+    }
 
+    public function getForecastWeather($city, $format = 'json')
+    {
+        return $this->getWeather($city, 'all', $format);
+    }
 }
