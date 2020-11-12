@@ -1,6 +1,6 @@
 <?php
 
-namespace CehnyiWen666\Weather\Exceptions;
+namespace LostControls\Weather\Exceptions;
 
 class Exception extends \Exception
 {

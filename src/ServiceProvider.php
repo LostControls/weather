@@ -1,6 +1,6 @@
 <?php
 
-namespace CehnyiWen666\Weather;
+namespace LostControls\Weather;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {

@@ -6,7 +6,7 @@
 <h2 align="center"> 安装 </h2>
 
 ```shell
-$ composer require chenyiwen666/weather -vvv
+$ composer require LostControls/weather -vvv
 ```
 
 <h2 align="center"> 配置 </h2>
@@ -15,7 +15,7 @@ $ composer require chenyiwen666/weather -vvv
 <h2 align="center"> 使用 </h2>
 
 ```
-use ChenYiWen\Weather\Weather;
+use LostControls\Weather\Weather;
 
 $key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxx';
 
