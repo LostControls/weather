@@ -1,6 +1,6 @@
 <?php
 
-namespace Overtrue\Weather;
+namespace CehnyiWen666\Weather;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {

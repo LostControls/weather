@@ -1,5 +1,5 @@
 <?php
-namespace Overtrue\Weather;
+namespace CehnyiWen666\Weather;
 
 use GuzzleHttp\Client;
 use Overtrue\Weather\Exceptions\HttpException;
