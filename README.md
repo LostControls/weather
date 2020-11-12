@@ -15,7 +15,7 @@ $ composer require chenyiwen666/weather -vvv
 <h2 align="center"> 使用 </h2>
 
 ```
-use Overtrue\Weather\Weather;
+use ChenYiWen\Weather\Weather;
 
 $key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxx';
 
